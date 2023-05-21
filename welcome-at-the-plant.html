@@ -3,116 +3,212 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Welcome to The Plant @ FASoS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body>
     <div class="container">
 
+<!-- Start Welcome card -->
       <div class="card">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">I am a researcher</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-      </div>
-
-      <p>
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
-          Button with data-bs-target
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-square" viewBox="0 0 16 16">
-  <path d="M3.626 6.832A.5.5 0 0 1 4 6h8a.5.5 0 0 1 .374.832l-4 4.5a.5.5 0 0 1-.748 0l-4-4.5z"/>
-  <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2z"/>
-</svg>
-        </button>
-      </p>
-      <div class="collapse" id="collapseExample1">
-        <div class="card card-body">
-          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-        </div>
-      </div>  
-      <p>
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-          Button with data-bs-target
-        </button>
-      </p>
-      <div class="collapse" id="collapseExample2">
-        <div class="card card-body">
-          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        <img src="https://theplant.maastrichtuniversity.nl/wp-content/uploads/2023/04/cropped-HomePage_UMNew2-1536x369.png" class="card-img-top" alt="The Plant">
+        <div class="card-body" id="personas-carousel">
+          <h5 class="card-title">Welcome to <strong>The Plant</strong></h5>
+          <p class="card-text"><strong>The Plant: Playground and Laboratory for New Technologies</strong> is the newly established infrastructure at the Faculty of Arts and Social Sciences (FASoS) at Maastricht University (UM).</p><p>Nourish <strong>The Plant</strong> with your input, and let your research, teaching and learning grow.</p>
+          <a href="#accordionExample" class="btn btn-primary">Discover</a>
         </div>
       </div>
+<!-- End Welcome Card -->
 
-<div class="accordion" id="accordionExample">
+<!-- Start Accordion -->
+<div class="accordion accordion-flush mt-3" id="accordionExample" style="--bs-accordion-active-bg: #001341;--bs-accordion-active-color: white;" data-bs-spy="scroll" data-bs-target="#personas-carousel" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+  
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        <h3>I am a researcher</h3>
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <h5>I am teaching</h5>
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+
+<!-- Start Carousel -->
+      <div id="carousel-1" class="carousel carousel-dark slide" data-bs-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+              <div class="card-body mx-5">
+                <h5 class="card-title">Exploring new ways of teaching and learning</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Wondering how to integrate digital technology in your learning materials?</li>
+                    <li>Need professional facilities and support when recording and editing knowledge clips for your students?</li>
+                    <li>Looking for a well equipped co-learning space for brainstorming with your students, co-creation, critical thinking, learning by doing?</li>
+                    <li>Curious about how to enhance PBL by integrating sensory and immersive learning, including virtual reality, podcasts or video clips?</li>                   
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card">
+              <div class="card-body mx-5">
+                <h5 class="card-title">Did you say yes?</h5>
+                <p class="card-text">to one of these questions?</p>
+                <a href="https://theplant.maastrichtuniversity.nl/contact/" class="btn btn-success">Get in touch</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+<!-- End carousel -->
+
     </div>
   </div>
+  
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingTwo">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        <h5>I am a teacher</h5>
+        <h5>I am a researcher</h5>
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
 
-<div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="false">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://fasos.maastrichtuniversity.nl/weekly/wp-content/uploads/2022/09/The-plant-logo-final.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
+<!-- Start Carousel -->
+      <div id="carousel-2" class="carousel carousel-dark slide" data-bs-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+              <div class="card-body mx-5">
+                <h5 class="card-title">At the start of your research</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Willing to acquire new skills and competencies in digital scholarship by attending workshops, masterclasses and one-to-one consultancy sessions?</li>
+                    <li>Dreaming of a space to experiment with new technologies or devices to see which might be most proficient for your research?</li>
+                    <li>Looking for a technology partner in an application for funding for my technology enhanced research project?</li>
+                    <li>In need of a partner to clean up, assemble, connect your research data from different sources?</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
 
-<div class="card">
-  <div class="card-body mx-auto">
-    <h5 class="card-title">Room Booking</h5>
-    <p class="card-text">At The Plant you can book 3 working spaces.</p>
-  </div>
-</div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="card-body mx-5">
+                <h5 class="card-title">During your research</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Want to book a space with digital tools and equipment for collaboration with internal and external stakeholders?</li>
+                    <li>Open to meeting sessions for discussing, exchanging, or testing approaches with fellow researchers?</li>
+                    <li>Wondering where to use a powerful computational research facility or cloud service to analyse big data for your research?</li>
+                    <li>Looking for a state-of-the-art expertise to analyse your research data, using text mining or web scraping, image processing, machine learning or AI?</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card">
+              <div class="card-body mx-5">
+                <h5 class="card-title">For your research output</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Curious about new research output formats, such as diagrams and visualisations, interactive maps or timelines, 3D objects, datasets and digital collections, audio and video, apps and prototypes?</li>
+                    <li>Need some help bij cross platform publishing of your research results?</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card">
+              <div class="card-body mx-5">
+                <h5 class="card-title">Did you say yes?</h5>
+                <p class="card-text">to one of these questions?</p>
+                <a href="https://theplant.maastrichtuniversity.nl/contact/" class="btn btn-success">Get in touch</a>
+              </div>
+            </div>
+          </div>          
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+<!-- End carousel -->
 
     </div>
-    <div class="carousel-item">
-      <img src="https://fasos.maastrichtuniversity.nl/weekly/wp-content/uploads/2022/09/The-plant-logo-final.jpg" class="d-block w-100" alt="...">
-    </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
-    </div>
-  </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        <h3>I am a student</h3>
+        <h5>I am a student</h5>
       </button>
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+
+<!-- Start Carousel -->
+      <div id="carousel-3" class="carousel carousel-dark slide" data-bs-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+              <div class="card-body mx-5">
+                <h5 class="card-title">Exploring new ways of teaching and learning</h5>
+                <p class="card-text">
+                  <ul>
+                    <li>Need some help to get started with research software such as Python and R for your thesis or research project?</li>
+                    <li>Wouldn't it be great to take out some specialised equipment for your AR/VR experiment, audio or video project?</li>                
+                  </ul>
+                </p>
+              </div>
+            </div>
           </div>
+
+          <div class="carousel-item">
+            <div class="card">
+              <div class="card-body mx-5">
+                <h5 class="card-title">Did you say yes?</h5>
+                <p class="card-text">to one of these questions?</p>
+                <a href="https://theplant.maastrichtuniversity.nl/contact/" class="btn btn-success">Get in touch</a>
+              </div>
+            </div>
+          </div>
+
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-3" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+<!-- End carousel -->
+
     </div>
   </div>
-</div>          
+
+</div>
+<!-- End Accordion -->        
 
     </div>
     
